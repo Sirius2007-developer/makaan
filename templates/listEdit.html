@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h2>Biz bu ma'lumotlarni tahrirlaymiz!</h2>
+<form method="post">{% csrf_token %}
+    {{form.as_p}}
+    <button type="submit" class="btn btn-danger">Tahrirlaymiz!</button>
+</form>
+{% endblock content %}

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h2>Biz bu mulkni o'chiramiz</h2>
+<form method="post">{%csrf_token%}
+    <h4>{{list.name}} sarlavhali mulkni o'chirishni xohlaysizmi?</h4>
+    <button type="submit" class="btn btn-danger">Tasdiqlayman!</button>
+</form>
+{% endblock content %}
